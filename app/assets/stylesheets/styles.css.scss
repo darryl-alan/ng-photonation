@@ -1,0 +1,50 @@
+.username {
+  margin-top: 15px !important;
+  text-align: center;
+
+  a {
+    color: black !important;
+    margin: 0 !important;
+    display: inline !important;
+    padding: 5px !important;
+  }
+  a:hover,
+  a:focus {
+    color: #000 !important;
+  }
+}
+
+.btn-logout {
+  padding-left: 0;
+  .btn {
+    margin-top: 7% !important;
+  }
+}
+
+.nav.navbar-nav {
+  li a {
+    margin-right: 5px;
+  }
+}
+
+.nav.navbar-right li {
+  .btn {
+    color: #fff !important;
+    margin-top: 4%;
+  }
+
+  .btn-danger:hover,
+  .btn-danger:focus {
+    background-color: darken(#d9534f, 20%) !important;
+  }
+
+  .btn-primary:hover,
+  .btn-primary:focus {
+    background-color: darken(#428bca, 20%) !important;
+  }
+}
+
+.btn-primary:visited,
+.btn-danger:visited {
+  color: #fff;
+}
