@@ -7,6 +7,7 @@ ruby "2.6.3"
 gem "rails", "~> 5.2.3"
 
 gem "devise"
+gem "stripe"
 gem "twitter-bootstrap-rails"
 gem "devise-bootstrap-views"
 gem "jquery-rails"
