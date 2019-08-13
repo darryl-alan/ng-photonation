@@ -1,2 +1,46 @@
-<h1>Welcome to NG Photonation</h1>
-<p>Find me in app/views/splash/index.html.erb</p>
+<% if current_user %>
+  <h3>Welcome: <%= current_user.email %></h3>
+<% else %>
+  <div class="jumbotron">
+    <h2>Welcome to the NG Photonation</h2>
+    <p class="lead">
+      Enter a world of photographic bliss
+    </p>
+  </div>
+  <div class="row">
+    <div class="plans clearfix">
+      <div class="col-lg-4 col-lg-offset-1 plan well">
+        <h2 class='text-center'>Basic Plan</h2>
+        <h5 class="text-center">
+          Price: <strong>IDR 50.000</strong>
+        </h5>
+        <div class="features">
+          <ul>
+            <li>Unlimited Images</li>
+            <li>Unlimited Devices</li>
+          </ul>
+        </div>
+        <p class='text-center'>
+          <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up' %>
+        </p>
+      </div>
+      <div class='col-lg-2'>&nbsp;</div>
+      <div class="col-lg-4 plan well">
+        <h2 class='text-center'>Professional Plan</h2>
+        <h5 class="text-center">
+          Price: <strong>IDR 100.000</strong>
+        </h5>
+        <div class="features">
+          <ul>
+            <li>All features from Basic Plan, plus:</li>
+            <li>Automatic backups</li>
+            <li>Easy download</li>
+          </ul>
+        </div>
+        <p class='text-center'>
+          <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up' %>
+        </p>
+      </div>
+    </div>
+  </div>
+<% end %>
